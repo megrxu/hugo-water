@@ -1,0 +1,12 @@
+name = "Water"
+license = "MIT"
+licenselink = "https://github.com/megrxu/hugo-water/blob/master/LICENSE"
+description = ""
+homepage = "https://xugr.me/hugo-water"
+tags = ["minimal", "water.css"]
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Ray Xu"
+  homepage = "https://xugr.me"

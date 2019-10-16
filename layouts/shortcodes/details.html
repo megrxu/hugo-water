@@ -1,0 +1,6 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<details {{ .Get "default" | default "hide" }}>
+    <summary>{{ .Get "summary" }}</summary>
+    {{ .Inner }}
+</details>

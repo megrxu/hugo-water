@@ -1,0 +1,12 @@
+<head>
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta name="description" content="{{ .Summary }}" />
+    {{ with first 1 (.Resources.ByType "image") }}
+    <meta property="og:image" content="{{ .Permalink }}" />
+    {{ end }}
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <link rel="stylesheet" href="{{ "/theme.css" | relURL }}">
+    <link href="{{ "/index.xml" | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />
+</head>
