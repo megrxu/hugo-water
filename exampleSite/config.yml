@@ -1,0 +1,20 @@
+baseURL : "https://xugr.me/hugo-water/"
+languageCode : "en-us"
+title : "Hugo - Water"
+theme : "hugo-water"
+themesDir : "../../"
+
+menu:
+  main:
+  - identifier: post
+    name: Posts
+    url: /post/
+    weight: 1
+  - identifier: links
+    name: Links
+    weight: 2
+  - identifier: github
+    name: GitHub
+    url: https://github.com
+    weight: 1
+    parent: links

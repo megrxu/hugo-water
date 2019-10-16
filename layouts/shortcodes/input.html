@@ -1,0 +1,3 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<input {{with .Get "options" }} {{ . }}{{ end }}  value="{{ .Get "value" | default "Input" }}"  />

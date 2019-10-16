@@ -1,0 +1,39 @@
+body>header {
+    height: var(--space-4);
+
+    div#title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            margin-block-start: var(--tiny);
+            margin-block-end: var(--tiny);
+
+            li {
+                display: block;
+                margin: 0 var(--space-1);
+                padding: var(--tiny);
+                background: var(--background-body);
+            }
+
+            li:hover {
+                background: var(--background);
+            }
+        }
+
+        ul.sub-menu {
+            margin: 0;
+            display: none;
+            padding: 0;
+            z-index: 100;
+        }
+
+        li.parent:hover ~ ul{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
