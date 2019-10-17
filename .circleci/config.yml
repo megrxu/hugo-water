@@ -34,10 +34,10 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: public
+          at: exampleSite/public
       - run:
           name: Disable jekyll builds
-          command: touch public/.nojekyll
+          command: touch exampleSite/public/.nojekyll
       - run:
           name: Install and configure dependencies
           command: |
@@ -52,4 +52,4 @@ jobs:
           command: ssh-add -D && ssh-add ~/.ssh/id_rsa_a42fc8ede9cdb7703618f855c916f25c
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist public
+          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist exampleSite/public
