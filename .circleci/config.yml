@@ -16,15 +16,16 @@ jobs:
   build:
     docker:
       - image: cibuilds/hugo:latest
-    working_directory: ~/hugo-water/exampleSite
+    working_directory: ~/hugo-water
     environment:
       HUGO_BUILD_DIR: public
     steps:
       - run: apk update && apk add git
       - checkout
+      - run: cd exampleSite
       - run: HUGO_ENV=production hugo -F -v -d $HUGO_BUILD_DIR
       - persist_to_workspace:
-          root: public
+          root: exampleSite/public
           paths: .
   deploy:
     docker:

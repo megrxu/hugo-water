@@ -14,26 +14,27 @@ body>header {
 
             li {
                 display: block;
-                margin: 0 var(--space-1);
-                padding: var(--tiny);
-                background: var(--background-body);
+                margin: 0 var(--tiny);
+                padding: var(--tiny) var(--space-1);
+                background: var(--background-alt);
+                height: 1.2em;
             }
 
             li:hover {
                 background: var(--background);
             }
+
+            ul.sub-menu {
+                margin: 0;
+                padding: 0;
+                display: none;
+            }
+
+            span.parent:hover>ul {
+                display: flex;
+                flex-direction: column;
+            }
         }
 
-        ul.sub-menu {
-            margin: 0;
-            display: none;
-            padding: 0;
-            z-index: 100;
-        }
-
-        li.parent:hover ~ ul{
-            display: flex;
-            flex-direction: column;
-        }
     }
 }

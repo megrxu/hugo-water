@@ -4,7 +4,7 @@ title: Water.css
 
 ## Goal
 
-A minimal reusable hugo theme based on the [water.css](https://watercss.netlify.com/) theme.
+A minimal reusable hugo theme based on [water.css](https://watercss.netlify.com/).
 
 ## Responsive?
 
