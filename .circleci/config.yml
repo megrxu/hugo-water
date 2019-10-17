@@ -23,8 +23,7 @@ jobs:
       - run: apk update && apk add git
       - checkout
       - run: git submodule update --init --recursive
-      - run: cd exampleSite
-      - run: HUGO_ENV=production hugo -F -v -d $HUGO_BUILD_DIR
+      - run: HUGO_ENV=production hugo -F -s exampleSite -v -d $HUGO_BUILD_DIR
       - persist_to_workspace:
           root: exampleSite/public
           paths: .
