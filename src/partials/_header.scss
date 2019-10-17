@@ -38,3 +38,23 @@ body>header {
 
     }
 }
+
+@include mq($until: md) {
+    body>header {
+        height: var(--space-8);
+
+        div#title {
+            flex-direction: column;
+            justify-content: left;
+
+            ul {
+                padding: 0;
+                justify-content: left;
+
+                li {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
