@@ -1,0 +1,22 @@
+body>footer {
+    padding-top: var(--space-1);
+
+    ul#social {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+
+        li {
+            display: block;
+            margin: 0 var(--tiny);
+            padding: var(--tiny) var(--space-1);
+        }
+    }
+
+    p#copyright {
+        color: var(--text-lighen);
+        text-align: center;
+    }
+
+}

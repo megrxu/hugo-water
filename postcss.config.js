@@ -1,9 +1,12 @@
 module.exports = {
     plugins: [
         require('postcss-preset-env')({
-            autoprefixer: {grid: true},
+            autoprefixer: { grid: true },
             stage: 3
         }),
-        require('cssnano')({preset: 'default'})
+        require('postcss-css-variables'),
+        require('postcss-import'),
+        require('postcss-color-mod-function'),
+        require('cssnano')({ preset: 'default' })
     ]
 };

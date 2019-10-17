@@ -1,0 +1,15 @@
+<br>
+<hr>
+
+<footer>
+    {{ with .Site.Params.social }}
+    <ul id="social">
+        {{ range . }}
+        <li><a href="{{ .url | relURL }}"> {{ .name }} </a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    {{ with .Site.Params.copyright }}
+    <p id="copyright">{{ . }}</p>
+    {{ end }}
+</footer>
