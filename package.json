@@ -1,8 +1,8 @@
 {
-  "name": "scss-template",
+  "name": "hugo-water",
   "version": "1.0.0",
-  "description": "A template repo to create fancy and compact  stylesheet from elegant SCSS.",
-  "repository": "https://github.com/megrxu/scss-template",
+  "description": "A minimal reusable hugo theme based on water.css.",
+  "repository": "https://github.com/megrxu/hugo-water",
   "author": "Ray Xu <megrxu@gmail.com>",
   "license": "MIT",
   "private": true,
