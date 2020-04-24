@@ -1,3 +1,6 @@
 [submodule "src/water.css"]
-	path = src/water.css
+	path = assets/water.css
 	url = https://github.com/kognise/water.css.git
+[submodule "assets/sass-mq"]
+	path = assets/sass-mq
+	url = https://github.com/sass-mq/sass-mq.git
