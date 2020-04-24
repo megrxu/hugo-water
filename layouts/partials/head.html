@@ -7,6 +7,7 @@
     <meta property="og:image" content="{{ .Permalink }}" />
     {{ end }}
     <link rel="canonical" href="{{ .Permalink }}" />
-    <link rel="stylesheet" href="{{ "/theme.css" | relURL }}">
+    {{- $styles := resources.Get "theme.scss" | resources.ExecuteAsTemplate "theme.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
     <link href="{{ "/index.xml" | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />
 </head>
