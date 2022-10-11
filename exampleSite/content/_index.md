@@ -25,6 +25,9 @@ The HTML Details Element (details) creates a disclosure widget in which informat
 {{% /details %}}
 
 - `input`
+
   {{< input value="04D6H89Z" >}}
+
   {{< input value="04D6H89Z" options="readonly" >}}
+
   {{< input value="04D6H89Z" options="disabled" >}}
